@@ -12,6 +12,3 @@ try:
 
 except ValueError:
     print("Ошибка ввода")
-except Exception:
-    print("Произошла ошибка")
- 
