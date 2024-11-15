@@ -6,10 +6,10 @@ try:
 
     if n < 100 or n > 999:
         raise ValueError("Число должно быть трехзначным.")
-
-    hundreds = n // 100        # Сотни
-    tens = (n // 10) % 10      # Десятки
-    units = n % 10             # Единицы
+# Извлекаем сотни, десятки и единицы, проверяем различны ли цифры
+    hundreds = n // 100
+    tens = (n // 10) % 10
+    units = n % 10
 
     if (hundreds != tens) and (hundreds != units) and (tens != units):
         print("Все цифры различны")
